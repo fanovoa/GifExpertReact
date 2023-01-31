@@ -12,7 +12,7 @@ export const GifExpertApp = () => {
 
         // console.log( newCategory );
         // setCategories( cat => [...cat, 'One Piece'] );
-        setCategories( [...categories, newCategory ]);
+        setCategories( [ newCategory,...categories ]);
     }
 
     return (
