@@ -1,6 +1,5 @@
 import { useState } from 'react';
-import { AddCategory } from './components/AddCategory';
-import { GifGrid } from './components/GifGrid';
+import { AddCategory,GifGrid } from './components';
 
 export const GifExpertApp = () => {
 
@@ -10,7 +9,6 @@ export const GifExpertApp = () => {
 
         if( categories.includes(newCategory) ) return;
 
-        // console.log( newCategory );
         // setCategories( cat => [...cat, 'One Piece'] );
         setCategories( [ newCategory,...categories ]);
     }
